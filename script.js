@@ -176,17 +176,59 @@
 
 ////////////*********************************************************************************************************************************8 */
 // 12.Write a function that takes an array of objects and returns a new array with only the objects that have a specific property.
-let obj=[
-    {name:'amit',age:'25'},
-    {name:'ankit',age:'25',pancard:'KHY3456'},
-    {name:'sonu',age:'25',pancard:'KHY3456'},
-    {name:'anit',age:'25'},
-    {name:'amit',age:'25',mobile:'889097878'},
-    {name:'priya',age:'22'}
-]
-let newArray=[];
- function specificProperty(x, property){
-  newArray=  x.fliter((e)=>{e.hasOwnProperty(property)});
-  console.log(newArray);
- };
- specificProperty(obj,'pancard')
+// let obj=[
+//     {name:'amit',age:'25'},
+//     {name:'ankit',age:'25',pancard:'KHY3456'},
+//     {name:'sonu',age:'25',pancard:'KHY3456'},
+//     {name:'anit',age:'25'},
+//     {name:'amit',age:'25',mobile:'889097878'},
+//     {name:'priya',age:'22'}
+// ]
+// function filterObject(objects, property) {
+//   return objects.filter(obj => obj.hasOwnProperty(property));
+  
+// }
+// let newarray= filterObject(obj,'mobile');
+// console.log(newarray);
+//////**************************************************************************************************************************************** */
+// 13.Implement a function that takes a string as input and returns a boolean indicating whether the string is a palindrome.
+
+// let str = "noon";
+//  function palindrome(str) {
+//     return str=== str.split("").reverse().join("");
+//  }
+//  console.log(palindrome(str));
+//////************************************************************************************************************************************///////
+// 14.Write a function that takes an array of numbers as input and returns the median value of the array.
+
+// let numberArray=[2,4,5,9,18,32];
+
+// function getMedian(x){
+// let sortedArray = x.slice().sort((a,b) => a-b);
+// let lenght = sortedArray.length;
+// let middleIndex = Math.floor(lenght / 2);
+// if(lenght%2===0){
+//     return (sortedArray[middleIndex-1] + sortedArray[middleIndex]) / 2;
+
+// }else{
+//     return (sortedArray[middleIndex] );
+// }
+
+// }
+//   console.log(getMedian(numberArray));
+//************************************************************************************************************* */
+// 15.Implement a function that takes a string as input and returns a new string with all the vowels removed.
+// let str ="amit";
+// let vowelsArray =['a','i','o','u','e'];
+//  function vowlesRemoved(x){
+// let newstr='';
+// for (let i=0; i<x.length; i++){
+//     if(!vowelsArray.includes(x[i])){
+//         newstr +=x[i];
+//     }
+// }
+//    return newstr
+//  }
+
+//  console.log(vowlesRemoved(str));
+ //////////////////////*********************************************************************************************** */
